@@ -1,4 +1,4 @@
-# ng-pizza
+# pizapp client is taken from ng-pizza
 
 Order pizza online. Sample angular.js application.
 
