@@ -42,5 +42,9 @@
   "Orders": {
     "dataSource": "db_mysql",
     "public": true
+  },
+  "FoodItems": {
+    "dataSource": "db_mysql",
+    "public": true
   }
 }
