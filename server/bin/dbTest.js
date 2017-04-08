@@ -6,7 +6,7 @@ var app = require(path.resolve(__dirname, '../server'));
 var dataSource = app.dataSources.db_mysql;
 
 var tables = [  
-  "Test"
+  "Orders"
 
 ];
 

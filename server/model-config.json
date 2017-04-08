@@ -38,5 +38,9 @@
   "Test": {
     "dataSource": "db_mysql",
     "public": true
+  },
+  "Orders": {
+    "dataSource": "db_mysql",
+    "public": true
   }
 }
