@@ -1,8 +1,199 @@
-<div class="row">
+
+
+
+<style type="text/css" media="screen">
+	 body {
+      position: relative; 
+  }
+    #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-top:50px;height:auto;color: black; background-color: #673ab7;}
+  #section3 {padding-top:50px;height:auto;color: black; background-color: #ff9800;}
+   .nav.affix {
+    position: fixed;
+    top: 300px;
+    width: 100%
+}
+
+.nav li {
+
+    width:7em;/*this fixes the width to all elements*/
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size: 15px;
+    
+}
+.navbar-brand{
+  font-size: 37px;
+    font-family: cursive;
+    padding: 25px 15px;
+    color: white !important;
+    left: 15%;
+    position: relative;
+}
+</style>
+
+
+
+ <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" ng-init="wakeMeup()">
+            <div class="container">
+                <div class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">grillsonwheels</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav main-nav  clear navbar-right ">
+                            <li><a class="navactive color_animation" href="#section1">WELCOME</a></li>
+                            <li><a class="color_animation" href="#section2">ORDER</a></li>
+                          <!--   <li><a class="color_animation" href="#story">ABOUT</a></li> -->
+                            
+                           <!--  <li><a class="color_animation" href="#beer">BEER</a></li>
+                            <li><a class="color_animation" href="#bread">BREAD</a></li> -->
+                           <!--  <li><a class="color_animation" href="#featured">FEATURED</a></li> -->
+                          <!--   <li><a class="color_animation" href="#reservation">RESERVATION</a></li> -->
+                            <li><a class="color_animation" href="#section3">CONTACT</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </div><!-- /.container-fluid -->
+        </nav>
+         
+        <div id="section1" class="starter_container bg">
+            <div class="follow_container">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2 class="top-title"> Restaurant</h2>
+                    <h2 class="white second-title">" Best in the city "</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+       <!-- ============ Pricing  ============= -->
+
+
+        <section id ="section2" class="description_content">
+             <!-- <div class="pricing background_content">
+                <h1><span>Affordable</span> pricing</h1>
+             </div> -->
+            <div class="text-content container"> 
+                <div class="container">
+                <div class="row">
 	<div class="col-sm-6">
 		<pizza-list list="pizzaList" order="order"></pizza-list>
 	</div>
-	<div class="col-sm-6">
+	<div class="col-sm-6" >
 		<order-list list="pizzaList" order="order"></order-list>
 	</div>
 </div>
+                   <!--  <div class="row">
+                        <div id="w">
+                            <ul id="filter-list" class="clearfix">
+                                <li class="filter" data-filter="all">All</li>
+                                <li class="filter" data-filter="breakfast">Breakfast</li>
+                                <li class="filter" data-filter="special">Special</li>
+                                <li class="filter" data-filter="desert">Desert</li>
+                                <li class="filter" data-filter="dinner">Dinner</li>
+                            </ul>
+                            <ul id="portfolio">
+                                <li class="item breakfast"><img src="images/food_icon01.jpg" alt="Food" >
+                                    <h2 class="white">$20</h2>
+                                </li>
+
+                                <li class="item dinner special"><img src="images/food_icon02.jpg" alt="Food" >
+                                    <h2 class="white">$20</h2>
+                                </li>
+                                <li class="item dinner breakfast"><img src="images/food_icon03.jpg" alt="Food" >
+                                    <h2 class="white">$18</h2>
+                                </li>
+                                <li class="item special"><img src="images/food_icon04.jpg" alt="Food" >
+                                    <h2 class="white">$15</h2>
+                                </li>
+                                <li class="item dinner"><img src="images/food_icon05.jpg" alt="Food" >
+                                    <h2 class="white">$20</h2>
+                                </li>
+                                <li class="item special"><img src="images/food_icon06.jpg" alt="Food" >
+                                    <h2 class="white">$22</h2>
+                                </li>
+                                <li class="item desert"><img src="images/food_icon07.jpg" alt="Food" >
+                                    <h2 class="white">$32</h2>
+                                </li>
+                                <li class="item desert breakfast"><img src="images/food_icon08.jpg" alt="Food" >
+                                    <h2 class="white">$38</h2>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+            </div>  
+        </section>
+
+
+
+
+        <!-- ============ Contact Section  ============= -->
+
+        <section id="section3">
+           
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="inner contact">
+                         <h2 class="black second-title" style="text-align: center;">'Please contact us for any queries'</h2>
+                            <!-- Form Area -->
+                            <div class="contact-form">
+                                <!-- Form -->
+                                <form id="contact-us" method="post" action="contact.php">
+                                    <!-- Left Inputs -->
+                                    <div class="col-md-6 ">
+                                        <!-- Name -->
+                                        <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                                        <!-- Email -->
+                                        <input type="email" name="email" id="email" required="required" class="form" placeholder="Email" />
+                                        <!-- Subject -->
+                                        <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                                    </div><!-- End Left Inputs -->
+                                    <!-- Right Inputs -->
+                                    <div class="col-md-6">
+                                        <!-- Message -->
+                                        <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                                    </div><!-- End Right Inputs -->
+                                    <!-- Bottom Submit -->
+                                    <div class="relative fullwidth col-xs-12">
+                                        <!-- Send Button -->
+                                        <button type="submit" id="submit" name="submit" class="form-btn">Send Message</button> 
+                                    </div><!-- End Bottom Submit -->
+                                    <!-- Clear -->
+                                    <div class="clear"></div>
+                                </form>
+                            </div><!-- End Contact Form Area -->
+                        </div><!-- End Inner -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ Footer Section  ============= -->
+
+        <footer class="sub_footer">
+            <div class="container">
+                <div class="col-md-4"><p class="sub-footer-text text-center">&copy; Restaurant 2014, Theme by <a href="https://themewagon.com/">ThemeWagon</a></p></div>
+                <div class="col-md-4"><p class="sub-footer-text text-center">Back to <a href="#top">TOP</a></p>
+                </div>
+                <div class="col-md-4"><p class="sub-footer-text text-center">Built With Care By <a href="#" target="_blank">Us</a></p></div>
+            </div>
+        </footer>
+
+
+

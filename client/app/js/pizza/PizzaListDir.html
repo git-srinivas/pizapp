@@ -10,22 +10,29 @@
 		</div>
 		<hr/>
 		<div ng-repeat="pizza in list | filter: search">
-			<div class="pull-right">
-				<div class="price">{{pizza.price}} €</div>
+			<div class="pull-right" >
+				<div class="price">{{pizza.price}} ₹</div>
 				<button type="button" ng-click="order.add(pizza)"
 				        class="btn btn-success">
 					<span class="glyphicon glyphicon-plus"></span>
 					Order
 				</button>
 			</div>
-			<h3>
-				{{pizza.name}}
-				<span class="label label-warning" ng-show="pizza.vege">vegetarian</span>
-			</h3>
+			<span>
+				
+				<h3>
+				{{pizza.name}}              
 
+				<span class="label label-warning" ng-show="pizza.vege">vegetarian</span>  
+			</h3> 
 			<p>
 				<span ng-repeat="item in pizza.content">{{item}}<span ng-hide="$last">, </span></span>
 			</p>
+			</span><br>
+			
+					<img src="images/food_icon01.jpg" alt="Food" class="img-responsive" style="height: 250px;width: 250px">
+					
+			
 			<hr ng-hide="$last"/>
 		</div>
 	</div>

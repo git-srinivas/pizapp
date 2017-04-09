@@ -5,7 +5,7 @@ var app = angular.module('pizza', ['ngRoute', 'ngResource','lbServices']);
 app.config(function (LoopBackResourceProvider,$routeProvider) {
 
 	 // Change the URL where to access the LoopBack REST API server
-    LoopBackResourceProvider.setUrlBase('http://localhost:3000/api');
+    LoopBackResourceProvider.setUrlBase('http://localhost:8000/api');
 
 	$routeProvider
 		.when('/', {
